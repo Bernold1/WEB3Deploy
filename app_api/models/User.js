@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-  Firstname: { type: String, required: true, max: 255, min: 4 },
-  Lastname: { type: String, required: true, max: 255, min: 4 },
+  Firstname: { type: String, required: true, max: 255, min: 2 },
+  Lastname: { type: String, required: true, max: 255, min: 2 },
   //Probably going to have to set Nickname to be unique too...
-  Nickname: { type: String, required: true, max: 255, min: 4 },
+  Nickname: { type: String, required: true, max: 255, min: 2 },
   Email: { type: String, required: true, max: 255, min: 6 },
   Password: { type: String, required: true, max: 1024, min: 6 },
   date: { type: Date, default: Date.now }

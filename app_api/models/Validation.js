@@ -4,13 +4,13 @@ const Joi = require("@hapi/joi");
 const registerValidation = val => {
   const schema = Joi.object({
     Firstname: Joi.string()
-      .min(4)
+      .min(2)
       .required(),
     Lastname: Joi.string()
-      .min(4)
+      .min(2)
       .required(),
     Nickname: Joi.string()
-      .min(4)
+      .min(2)
       .required(),
     Email: Joi.string()
       .min(6)
